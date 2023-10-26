@@ -10,5 +10,7 @@ namespace ProjetoGame.Models
 
         } 
         public DbSet<Cadastro> Cadastro { get; set; }
+        public DbSet<Nota> Nota { get; set; }
+        public DbSet<Descricao> Descricao { get; set; }
     }
 }
