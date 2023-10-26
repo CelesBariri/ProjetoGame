@@ -48,8 +48,8 @@ namespace ProjetoGame.Controllers
         // GET: Descricao/Create
         public IActionResult Create()
         {
-            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroId");
-            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "Id");
+            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroNome");
+            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "NotaValor");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace ProjetoGame.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroId", descricao.CadastroId);
-            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "Id", descricao.NotaId);
+            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroNome", descricao.CadastroId);
+            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "NotaValor", descricao.NotaId);
             return View(descricao);
         }
 
@@ -84,8 +84,8 @@ namespace ProjetoGame.Controllers
             {
                 return NotFound();
             }
-            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroId", descricao.CadastroId);
-            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "Id", descricao.NotaId);
+            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroNome", descricao.CadastroId);
+            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "NotaValor", descricao.NotaId);
             return View(descricao);
         }
 
@@ -121,8 +121,8 @@ namespace ProjetoGame.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroId", descricao.CadastroId);
-            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "Id", descricao.NotaId);
+            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroNome", descricao.CadastroId);
+            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "NotaValor", descricao.NotaId);
             return View(descricao);
         }
 
