@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProjetoGame.Models;
 
 namespace ProjetoGame.Models
 {
@@ -8,5 +9,6 @@ namespace ProjetoGame.Models
         {
 
         } 
+        public DbSet<ProjetoGame.Models.Nota>? Nota { get; set; }
     }
 }
