@@ -7,6 +7,7 @@ namespace ProjetoGame.Models
         public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
 
-        } 
+        }
+        public DbSet<Descricao> Descricao { get; set; }
     }
 }
