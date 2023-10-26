@@ -11,11 +11,11 @@ namespace ProjetoGame.Models
         public int CadastroId { get; set; }
 
         [Column("CadastroNome")]
-        [Display(Name = "Nome do Cadastro")]
+        [Display(Name = "Nome do Jogo")]
         public string CadastroNome { get; set; } = string.Empty;
 
         [Column("CadastroCategoria")]
-        [Display(Name = "Categoria do Cadastro")]
+        [Display(Name = "Categoria do Jogo")]
         public string CadastroName { get; set; } = string.Empty;
 
 
