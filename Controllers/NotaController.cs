@@ -19,13 +19,23 @@ namespace ProjetoGame.Controllers
         }
 
         // GET: Nota
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string pesquisa)
         {
-              return _context.Nota != null ? 
-                          View(await _context.Nota.ToListAsync()) :
-                          Problem("Entity set 'Contexto.Nota'  is null.");
-        }
+            if (pesquisa == null)
+            {
+                return _context.Nota != null ?
+                     View(await _context.Nota.ToListAsync()) :
+                     Problem("Entity set 'Context.Nota' is null.");
+            }
+            else
+            {
+                var Nota = _context.Nota
+                      .Where(x => x.NotaValor.Equals(Convert.ToInt32(pesquisa)))
+                      .OrderBy(x => x.NotaValor);
 
+                return View(Nota);
+            }
+        }
         // GET: Nota/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -19,11 +19,24 @@ namespace ProjetoGame.Controllers
         }
 
         // GET: Cadastro
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String pesquisa)
         {
-              return _context.Cadastro != null ? 
-                          View(await _context.Cadastro.ToListAsync()) :
-                          Problem("Entity set 'Contexto.Cadastro'  is null.");
+            {
+                if (pesquisa == null)
+                {
+                    return _context.Cadastro != null ?
+                         View(await _context.Cadastro.ToListAsync()) :
+                         Problem("Entity set 'Context.Cadastro' is null.");
+                }
+                else
+                {
+                    var Cadastro = _context.Cadastro
+                          .Where(x => x.CadastroNome.Contains(pesquisa))
+                          .OrderBy(x => x.CadastroNome);
+
+                    return View(Cadastro);
+                }
+            }
         }
 
         // GET: Cadastro/Details/5
