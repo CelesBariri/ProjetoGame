@@ -12,11 +12,11 @@ builder.Services.AddControllersWithViews();
 /*builder.Services.AddDbContext<Contexto> //Felipe
     (options => options.UseSqlServer("Data Source=SB-1490632\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));*/
 
-builder.Services.AddDbContext<Contexto> //Gabriel
-    (options => options.UseSqlServer("Data Source=SB-1490657\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));
+/*builder.Services.AddDbContext<Contexto> //Gabriel
+    (options => options.UseSqlServer("Data Source=SB-1490657\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));*/
 
-/*builder.Services.AddDbContext<Contexto> //Vinicius
-    (options => options.UseSqlServer("Data Source=SB-1490631\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));*/
+builder.Services.AddDbContext<Contexto> //Vinicius
+    (options => options.UseSqlServer("Data Source=SB-1490631\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));
 
 var app = builder.Build();
 
