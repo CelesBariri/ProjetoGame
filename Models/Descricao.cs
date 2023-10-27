@@ -19,7 +19,7 @@ namespace ProjetoGame.Models
         public Cadastro? Cadastro { get; set; }
 
         [Column("DescricaoJogo")]
-        [Display(Name = "Descricao do jogo")]
+        [Display(Name = "Descrição do Jogo")]
         public string DescricaoJogo { get; set; } = string.Empty;
 
     }
