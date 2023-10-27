@@ -19,10 +19,28 @@ namespace ProjetoGame.Controllers
         }
 
         // GET: Descricao
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string pesquisa)
         {
-            var contexto = _context.Descricao.Include(d => d.Cadastro).Include(d => d.Nota);
-            return View(await contexto.ToListAsync());
+            {
+                if (pesquisa == null)
+                {
+                    return _context.Descricao.Include(x => x.Cadastro)
+                        .Include(x => x.Nota) != null ?
+                         View(await _context.Descricao.Include(x => x.Cadastro)
+                        .Include(x => x.Nota).ToListAsync()) :
+                         Problem("Entity set 'Contexto.Descricao' is null.");
+                }
+                else
+                {
+                    var Descricao = _context.Descricao
+                        .Include(x => x.Cadastro)
+                        .Include(x=> x.Nota)
+                        .Where(x => x.Cadastro.CadastroNome.Contains(pesquisa))
+                        .OrderBy(x => x.DescricaoJogo);
+
+                    return View(Descricao);
+                }
+            }
         }
 
         // GET: Descricao/Details/5
