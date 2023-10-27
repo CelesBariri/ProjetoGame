@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\imagens\imagem isnta.jpg" />
+    <Content Remove="wwwroot\imagens\images.jpg" />
+    <Content Remove="wwwroot\imagens\images2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
