@@ -15,9 +15,24 @@ html {
 .table {
     color: white;
 }
-a{
+a {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
+
+}
+.botao {
+    border: solid;
+    Border-color: #F55207;
+    background-color: #F55207;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.pesquisa {
+    background-color: #F55207;
+    color: white;
+    border-color: #F55207;
+    border-radius:5px;
 }
 
 body {
