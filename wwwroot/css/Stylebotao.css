@@ -5,7 +5,7 @@
     display: none;
     width: 210px;
     height: 150px;
-    background-color: orange;
+    background-color: black;
     position: absolute;
     top: 3.2rem;
     left: 7rem;
@@ -22,7 +22,7 @@
     list-style-type: none;
 }
 .submenu > li a {
-     color: black;
+     color: white;
      text-decoration: none;
      list-style: none;
 }
