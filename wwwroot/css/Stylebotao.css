@@ -16,8 +16,7 @@
     margin-left: 80%;
     margin-top: 3%;
     list-style: none;
-    webkit-box-shadow: 5px 5px 37px 17px #000000;
-    box-shadow: 5px 5px 37px 17px #000000;
+    box-shadow: 3px 3px 10px 10px #808080;
 }
 .submenu > li {
     margin: 1rem 0;
