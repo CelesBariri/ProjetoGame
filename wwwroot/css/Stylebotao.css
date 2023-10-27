@@ -5,7 +5,7 @@
     display: none;
     width: 210px;
     height: 150px;
-    background-color: orange;
+    background-color: black;
     position: absolute;
     top: 3.2rem;
     left: 7rem;
@@ -16,13 +16,15 @@
     margin-left: 80%;
     margin-top: 3%;
     list-style: none;
+    webkit-box-shadow: 5px 5px 37px 17px #000000;
+    box-shadow: 5px 5px 37px 17px #000000;
 }
 .submenu > li {
     margin: 1rem 0;
     list-style-type: none;
 }
 .submenu > li a {
-     color: black;
+     color: white;
      text-decoration: none;
      list-style: none;
 }

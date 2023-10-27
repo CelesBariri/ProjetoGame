@@ -14,7 +14,7 @@
     {
                     <p>
                         Digite aqui sua pesquisa: @Html.TextBox("pesquisa")
-                        <input type="submit" value="Pesquisar"/>
+            <input class="pesquisa" type="submit" value="Pesquisar" />
                     </p>
     }
 </div>
@@ -40,9 +40,9 @@
                 @Html.DisplayFor(modelItem => item.CadastroName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CadastroId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.CadastroId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.CadastroId">Deletar</a>
+                    <a class ="botao" asp-action="Edit" asp-route-id="@item.CadastroId">Editar</a> |
+                    <a class="botao" asp-action="Details" asp-route-id="@item.CadastroId">Detalhes</a> |
+                    <a class="botao" asp-action="Delete" asp-route-id="@item.CadastroId">Deletar</a>
             </td>
         </tr>
 }
