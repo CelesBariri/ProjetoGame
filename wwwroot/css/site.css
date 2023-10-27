@@ -38,3 +38,7 @@ header {
     width: 50px;
     height: 35px;
 }
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+
