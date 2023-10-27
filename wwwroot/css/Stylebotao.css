@@ -1,0 +1,36 @@
+﻿.item-submenu:hover .submenu {
+    display: block;
+}
+.submenu {
+    display: none;
+    width: 210px;
+    height: 150px;
+    background-color: orange;
+    position: absolute;
+    top: 3.2rem;
+    left: 7rem;
+    padding: 1rem 1.2rem;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: sans-serif;
+    margin-left: 80%;
+    margin-top: 3%;
+    list-style: none;
+}
+.submenu > li {
+    margin: 1rem 0;
+    list-style-type: none;
+}
+.submenu > li a {
+     color: black;
+     text-decoration: none;
+     list-style: none;
+}
+.item-submenu {
+    list-style: none;
+    text-decoration: none;
+}
+.icon {
+    font-size: 45px;
+    margin-right: 50px;
+}
