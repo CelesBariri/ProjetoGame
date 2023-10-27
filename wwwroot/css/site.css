@@ -12,6 +12,13 @@ html {
   position: relative;
   min-height: 100%;
 }
+.table {
+    color: white;
+}
+a{
+    color: white;
+    text-decoration:none;
+}
 
 body {
   margin-bottom: 60px;
