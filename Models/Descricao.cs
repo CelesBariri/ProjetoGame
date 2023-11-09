@@ -11,10 +11,12 @@ namespace ProjetoGame.Models
         public int DescricaoId { get; set; }
 
         [ForeignKey("NotaId")]
+        [Display(Name = "Nota")]
         public int NotaId { get; set; }
         public Nota? Nota { get; set; }
 
         [ForeignKey("CadastroId")]
+        [Display(Name = "Jogo")]
         public int CadastroId { get; set; }
         public Cadastro? Cadastro { get; set; }
 
