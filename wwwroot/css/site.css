@@ -90,3 +90,11 @@ header {
     width: 140px;
     height: 70px;
 }
+td {
+    text-align: center; /* alinhamento horizontal */
+    vertical-align: middle; /* alinhamento vertical */
+}
+tr {
+    text-align: center; /* alinhamento horizontal */
+    vertical-align: middle; /* alinhamento vertical */
+}
