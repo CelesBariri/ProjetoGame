@@ -7,9 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 /*builder.Services.AddDbContext<Contexto> //Rafael
-    (options => options.UseSqlServer("Data Source=SB-1490645\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));*/
+    (options => options.UseSqlServer("Data Source=SB-1490645\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));/*
 
-/*(options => options.UseSqlServer("Data Source=SB-1490632\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));*/
+builder.Services.AddDbContext<Contexto> //Felipe
+    (options => options.UseSqlServer("Data Source=SB-1490632\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));
 
 /*builder.Services.AddDbContext<Contexto> //Gabriel
     (options => options.UseSqlServer("Data Source=SB-1490657\\SQLSENAI;Initial Catalog = ProjetoGame;Integrated Security = True;TrustServerCertificate = True"));*/
@@ -23,22 +24,7 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scena
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    // rios, see https://aka.ms/aspnetcore-hsts.
+    // The default HSTS value is 30 days. You may want to change this for production scena   
     app.UseHsts();
 }
 
