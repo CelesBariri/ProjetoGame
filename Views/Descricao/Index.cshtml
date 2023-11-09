@@ -36,9 +36,32 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td>                   
+                @if(item.Nota.NotaValor == 1)
+                {
+                    <img src="~/imagens/estrela 1.png" class="img-estrela1"/>
+                }
+                else if (item.Nota.NotaValor == 2)
+                {
+                    <img src="~/imagens/estrela 2.png"  class="img-estrela2"/>
+                }
+                else if (item.Nota.NotaValor == 3)
+                {
+                        <img src="~/imagens/estrela 3.png" class="img-estrela3" />
+                }
+                else if (item.Nota.NotaValor == 4)
+                {
+                        <img src="~/imagens/estrela 4.png" class="img-estrela4" />
+                }
+                    else if (item.Nota.NotaValor == 5)
+                {
+                        <img src="~/imagens/estrela 5.png"  class="img-estrela5"/>
+                }
+                else
+                {
                     @Html.DisplayFor(modelItem => item.Nota.NotaValor)
-            </td>
+                }
+                </td>
             <td>
                     @Html.DisplayFor(modelItem => item.Cadastro.CadastroNome)
             </td>

@@ -67,3 +67,23 @@ header {
 .carousel-inner {
     margin-left: 26%;
 }
+.img-estrela1{
+    width:40px;
+    height:60px;
+}
+.img-estrela2 {
+    width: 70px;
+    height: 60px;
+}
+.img-estrela3 {
+    width: 100px;
+    height: 60px;
+}
+.img-estrela4 {
+    width: 120px;
+    height: 65px;
+}
+.img-estrela5 {
+    width: 140px;
+    height: 70px;
+}
