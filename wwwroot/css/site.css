@@ -24,11 +24,14 @@ p{
     color:white
 }
 .botao {
+    margin-top: 20px;
+    margin-bottom: 10px;
     border: solid;
     Border-color: #F55207;
     background-color: #F55207;
     border-radius: 5px;
     align-items: center;
+    color: white;
 }
 
 .pesquisa {
