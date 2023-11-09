@@ -102,8 +102,8 @@ namespace ProjetoGame.Controllers
             {
                 return NotFound();
             }
-            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroNome", descricao.CadastroId);
-            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "NotaValor", descricao.NotaId);
+            ViewData["CadastroId"] = new SelectList(_context.Set<Cadastro>(), "CadastroId", "CadastroNome", descricao.Cadastro);
+            ViewData["NotaId"] = new SelectList(_context.Set<Nota>(), "Id", "NotaValor", descricao.Nota);
             return View(descricao);
         }
 
